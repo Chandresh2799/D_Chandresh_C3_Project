@@ -5,7 +5,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalTime;
-
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -68,5 +68,12 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //<<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL FROM MENU FOR SELECTED ITEMS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void order_total_from_menu_for_selected_items(){
+        int orderTotal;
+        List<Item> selectedItems=null;
+        orderTotal=restaurant.getOrderTotal(selectedItems);
+    }
 
 }
